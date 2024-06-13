@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <title>Intelligent Graph Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="gif-container" id="gif-container">
+    <img src="gif/1.gif" alt="Loading..." />
+</div>
+
+<div class="gif-container" id="second-gif-container" style="display: none;">
+    <img src="gif/2.gif" alt="Processing..." />
+</div>
+
+<div class="content-wrapper" style="display: none;" id="main-content">
+    <h1 class="title">Intelligent Graph Layout</h1>
+    
+    <div class="drop-area" id="drop-area">
+        <img src="img/123.png" alt="Upload Icon" class="upload-icon" id="imageUpload">
+        <form class="my-form">
+            <p>Upload your adjacency matrix file</p>
+            <input type="file" id="fileElem" accept=".txt, .csv" onchange="handleFiles(this.files)">
+            <label for="fileElem" class="button">Select a file</label>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
